@@ -2,16 +2,17 @@
   "name": "skitdiscord-rpc",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js"
+    "start": "nodemon"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "discord-rpc": "^4.0.1",
     "electron": "^19.0.8",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "forever": "^4.0.3"
   }
 }

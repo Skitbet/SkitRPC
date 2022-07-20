@@ -4,20 +4,19 @@ const RPC = new DiscordRPC.Client({ transport: 'ipc' })
 
 DiscordRPC.register(clientId);
 
+const startTimestamp = new Date();
+
 async function setActivity() {
     if (!RPC) return;
     RPC.setActivity({
         details: `Hewo! I'm Skitbet`,
         state: `I cod- I mean break shit`,
-        startTimestamp: Date.now(),
+        startTimestamp,
         largeImageKey: `wink`,
         largeImageText: `Im a furry ha you mad`,
         instance: false,
         buttons: [
-            {
-                label: `My Github`,
-                url: `https://github.com/skitbet`
-            }
+			{ "label": "Github", "url": "https://github.com/Skitbet" }
         ]
     });
 };
